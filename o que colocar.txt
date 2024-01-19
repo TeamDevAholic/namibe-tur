@@ -1,0 +1,33 @@
+1: Todas as infromações sobre o municipio
+
+2: Onde Comer
+
+3: Locais a vizitar
+
+4: Onde Dormir
+
+5: Festas
+
+========== Pesquisar =======
+
+Imagens para o banner de acordo com a pagina
+
+Moçamedes {
+    infromações sobre o municipio, os locais a vizitar e os eventos
+    Imagens sobre as comidas, locais a vizitar e onde dormir e os eventos
+}
+
+Bibala {
+    infromações sobre o municipio, os locais a vizitar e os eventos
+    Imagens sobre as comidas, locais a vizitar e onde dormir e os eventos
+}
+
+Virei {
+    infromações sobre o municipio, os locais a vizitar e os eventos
+    Imagens sobre as comidas, locais a vizitar e onde dormir e os eventos
+}
+
+Tombwa {
+    infromações sobre o municipio, e os eventos
+    Imagens sobre as comidas, e onde dormir e os eventos
+}

@@ -374,7 +374,8 @@ nav .active-section span {
   font-weight: 700;
 }
 
-.Modern-Slider .info p {
+.Modern-Slider .info p,
+.Modern-Slider .info ul li {
   font-size: 15px;
   color: #fff;
 }
@@ -426,6 +427,10 @@ nav .active-section span {
   font: 32px/50px FontAwesome;
   color: #fff;
   z-index: 5;
+}
+
+.Modern-Slider p {
+  max-width: 1000px;
 }
 
 .Modern-Slider .item .image {
@@ -679,27 +684,27 @@ nav .active-section span {
   margin-bottom: 12.5px;
 }
 
-/* Projects Style */
+/* onde-dormir Style */
 
-#projects {
+#onde-dormir {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 50px;
 }
 
-#projects .masonry {
+#onde-dormir .masonry {
   position: relative;
   width: 100%;
 }
 
-#projects .masonry .item img {
+#onde-dormir .masonry .item img {
   transition: all 1s;
   width: 100%;
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-#projects .masonry .item img:hover {
+#onde-dormir .masonry .item img:hover {
   opacity: 0.5;
 }
 
@@ -802,15 +807,15 @@ nav .active-section span {
   transition: all 0.6s 0.8s;
 }
 
-/* Blog Style */
+/* eventos Style */
 
-#blog {
+#eventos {
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 80px;
 }
 
-#blog .tabs {
+#eventos .tabs {
   list-style: none;
   margin: 0px;
   padding: 0px;
@@ -820,7 +825,7 @@ nav .active-section span {
   border-bottom: 10px solid #45489a;
 }
 
-#blog .tabs li {
+#eventos .tabs li {
   display: inline-block;
   text-align: center;
   width: 25%;
@@ -829,7 +834,7 @@ nav .active-section span {
   padding: 0;
 }
 
-#blog .tabs a {
+#eventos .tabs a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -842,15 +847,15 @@ nav .active-section span {
   transition: 0.5s;
 }
 
-#blog .tabs a:hover {
+#eventos .tabs a:hover {
   color: #45489a;
 }
 
-#blog .tabs .active:hover {
+#eventos .tabs .active:hover {
   color: #fff;
 }
 
-#blog .tabs .active {
+#eventos .tabs .active {
   background-color: #45489a;
   color: #fff;
 }
@@ -866,13 +871,13 @@ nav .active-section span {
   clear: both;
 }
 
-#blog .tabgroup ul {
+#eventos .tabgroup ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-#blog .tabgroup ul li {
+#eventos .tabgroup ul li {
   display: inline-block;
   text-align: left;
   margin-bottom: 10px;
@@ -880,23 +885,23 @@ nav .active-section span {
   border-bottom: 1px solid #ddd;
 }
 
-#blog .tabgroup ul li:last-child {
+#eventos .tabgroup ul li:last-child {
   border-bottom: none;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
 
-#blog .tabgroup ul li img {
+#eventos .tabgroup ul li img {
   float: left;
   margin-right: 30px;
   max-width: 100%;
   overflow: hidden;
 }
-#blog .tabgroup ul li .text-content {
+#eventos .tabgroup ul li .text-content {
   display: inline;
 }
 
-#blog .item .text-content h4 {
+#eventos .item .text-content h4 {
   padding-top: 7.5px;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -906,7 +911,7 @@ nav .active-section span {
   letter-spacing: 0.5px;
 }
 
-#blog .item .text-content span {
+#eventos .item .text-content span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -915,7 +920,7 @@ nav .active-section span {
   margin-bottom: 15px;
 }
 
-#blog .item .text-content .accent-button {
+#eventos .item .text-content .accent-button {
   margin-top: 25px;
 }
 
@@ -1124,7 +1129,7 @@ nav .active-section span {
     right: 0;
   }
 
-  #projects {
+  #onde-dormir {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1134,21 +1139,21 @@ nav .active-section span {
     padding-right: 15px;
   }
 
-  #blog {
+  #eventos {
     padding-left: 15px;
     padding-right: 15px;
   }
 
-  #blog .tabs a {
+  #eventos .tabs a {
     font-size: 13px;
   }
 
-  #blog .tabgroup ul li img {
+  #eventos .tabgroup ul li img {
     float: none;
     width: 100%;
     margin-bottom: 15px;
   }
-  #blog .tabgroup ul li .text-content {
+  #eventos .tabgroup ul li .text-content {
     display: block;
   }
 
