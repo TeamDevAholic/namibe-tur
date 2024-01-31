@@ -848,6 +848,19 @@ https://templatemo.com/tm-518-sentra
 
                 lastScrollTop = st
             }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                var buttons =
+                    window.document.getElementsByClassName('slick-arrow')
+
+                buttons[0].addEventListener('click', () => {
+                    window.location.href = 'virei.html'
+                })
+
+                buttons[1].addEventListener('click', () => {
+                    window.location.href = 'index.html'
+                })
+            })
         </script>
 
         <script
