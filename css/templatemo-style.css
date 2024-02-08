@@ -22,6 +22,16 @@ p {
     flex-direction: row;
 
     justify-content: space-between;
+
+    align-items: center;
+}
+
+.linha > div {
+    max-width: min(100%, 450px);
+}
+
+.linha img {
+    width: min(100%, 350px);
 }
 
 .page-content {
@@ -160,6 +170,11 @@ header {
     transform: translateX(-50%) translateY(-50%);
 }
 
+.navbar-collapse hr {
+    opacity: 0.5;
+    width: 98%;
+}
+
 .navbar-nav {
     margin: 0;
     border: none;
@@ -242,6 +257,10 @@ header {
     -ms-transform: translateX(-60%) translateY(-60%);
     -o-transform: translateX(-60%) translateY(-60%);
     transform: translateX(-60%) translateY(-60%);
+}
+
+.sidebar-navigation ul h2 {
+    color: #ffffff99;
 }
 
 .sidebar-navigation ul {
