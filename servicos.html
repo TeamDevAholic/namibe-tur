@@ -32,10 +32,7 @@ https://templatemo.com/tm-518-sentra
     </head>
 
     <body>
-        <div
-            id="navs"
-            style="position: absolute; z-index: 50; top: 70px; left: 50%"
-        >
+        <div id="navs">
             <button
                 type="button"
                 id="nav-toggle"
@@ -54,7 +51,7 @@ https://templatemo.com/tm-518-sentra
             style="padding: 0.5rem"
             class="nav-down responsive-nav hidden-lg hidden-md"
         >
-            <div class="owl-carousel">
+            <div class="owl-carousel menu">
                 <div>
                     <a href="index.html">
                         <img
@@ -114,20 +111,28 @@ https://templatemo.com/tm-518-sentra
                         <li><a href="sitios.html">Sítios</a></li>
                         <li>
                             <a href="custos-de-acessos.html"
-                                >Custos de Acessos</a
+                                >Custo de Acesso</a
                             >
                         </li>
-                        <li><a href="taxis.html">Táxis personalizados</a></li>
-                        <li>
                             <a href="agenda-cultural.html">Agenda Cultural</a>
                         </li>
                         <li>
                             <a href="servicos.html">Serviços</a>
                         </li>
                         <li>
-                            <a href="calendario-cultural.html"
-                                >Calendário Cultural</a
-                            >
+                            <a href="calendario-cultural.html">
+                                Calendário Cultural
+                                </a>
+                        </li>
+                        <li>
+                            <a href="destinos.html">
+                                Destinos
+                                </a>
+                        </li>
+                        <li>
+                            <a href="guia.html">
+                                Guia Turistico
+                                </a>
                         </li>
                     </ul>
                 </nav>
@@ -138,9 +143,8 @@ https://templatemo.com/tm-518-sentra
             <div class="logo">
                 <a href="#">NAMIBE<em> TUR</em></a>
             </div>
-            <nav>
+            <nav style="margin-top: 2rem;">
                 <ul>
-                    <h2>municípios</h2>
                     <li>
                         <a href="index.html">
                             <span class="rect"></span>
@@ -209,14 +213,7 @@ https://templatemo.com/tm-518-sentra
                         <a href="custos-de-acessos.html">
                             <span class="rect"></span>
                             <span class="circle"></span>
-                            Custos de Acessos
-                        </a>
-                    </li>
-                    <li>
-                        <a href="taxis.html">
-                            <span class="rect"></span>
-                            <span class="circle"></span>
-                            Táxis personalizados
+                            Custo de Acesso
                         </a>
                     </li>
                     <li>
@@ -240,20 +237,25 @@ https://templatemo.com/tm-518-sentra
                             Calendário Cultural
                         </a>
                     </li>
+                    <li>
+                        <a href="destinos.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Destinos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="guia.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Guia Turistico
+                        </a>
+                    </li>
                 </ul>
             </nav>
-            <ul class="social-icons">
-                <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                </li>
-                <!-- <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-            </ul>
         </div>
 
-        <div class="page-content">
+        <div class="page-content" style="margin-top: 4rem">
             <section id="eventos" class="content-section">
                 <div class="section-heading">
                     <h1>Serviços disponiveis</h1>
@@ -390,62 +392,11 @@ https://templatemo.com/tm-518-sentra
         <script src="js/main.js"></script>
 
         <script>
-            // Hide Header on on scroll down
-            var didScroll
-            var lastScrollTop = 0
-            var delta = 5
-            var navbarHeight = $('header').outerHeight()
-
-            $(window).scroll(function (event) {
-                didScroll = true
-            })
-
-            setInterval(function () {
-                if (didScroll) {
-                    hasScrolled()
-                    didScroll = false
-                }
-            }, 250)
-
-            function hasScrolled() {
-                var st = $(this).scrollTop()
-
-                // Make sure they scroll more than delta
-                if (Math.abs(lastScrollTop - st) <= delta) return
-
-                // If they scrolled down and are past the navbar, add class .nav-up.
-                // This is necessary so you never see what is "behind" the navbar.
-                if (st > lastScrollTop && st > navbarHeight) {
-                    // Scroll Down
-                    $('header').removeClass('nav-down').addClass('nav-up')
-                } else {
-                    // Scroll Up
-                    if (st + $(window).height() < $(document).height()) {
-                        $('header').removeClass('nav-up').addClass('nav-down')
-                    }
-                }
-
-                lastScrollTop = st
-            }
-
-            document.addEventListener('DOMContentLoaded', () => {
-                var buttons =
-                    window.document.getElementsByClassName('slick-arrow')
-
-                buttons[0].addEventListener('click', () => {
-                    window.location.href = 'tombwa.html'
-                })
-
-                buttons[1].addEventListener('click', () => {
-                    window.location.href = 'mocamedes.html'
-                })
-            })
-
-            $('.owl-carousel').owlCarousel({
+            $('.menu').owlCarousel({
                 loop: true,
-                items: 1,
+                items: 5.5,
                 autoplay: true,
-                autoplayTimeout: 3000,
+                autoplayTimeout: 10000,
             })
         </script>
 
