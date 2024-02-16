@@ -16,6 +16,25 @@ p {
     line-height: 24px;
 }
 
+#navs {
+    display: none;
+}
+
+.nav-down .owl-carousel .owl-dots {
+    margin-top: 40px;
+    display: none;
+}
+
+.nav-down .owl-carousel div {
+    text-align: center;
+}
+
+.nav-down .owl-carousel div a img {
+    width: 50px;
+    border-radius: 100%;
+    margin: auto;
+}
+
 .linha {
     display: flex;
 
@@ -32,6 +51,15 @@ p {
 
 .linha img {
     width: min(100%, 350px);
+}
+
+.fc-col-header-cell-cushion {
+    color: #45489a !important;
+}
+
+.fc .fc-button-primary {
+    border-color: #45489a !important;
+    background-color: #45489a !important;
 }
 
 .page-content {
@@ -159,9 +187,9 @@ header {
 }
 
 .navbar-toggle {
-    position: absolute;
-    top: 40%;
-    left: 50%;
+    width: 100vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.41);
     display: inline-block;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -206,7 +234,8 @@ header {
 }
 
 .navbar-toggle span {
-    background-color: #232323;
+    margin: auto;
+    background-color: white;
 }
 
 /* Sidebar Style */
@@ -1042,6 +1071,10 @@ nav .active-section span {
 /* Responsive Style */
 
 @media (max-width: 992px) {
+    #navs {
+        display: block;
+    }
+
     .linha {
         flex-direction: column;
     }
@@ -1073,6 +1106,10 @@ nav .active-section span {
 }
 
 @media (max-width: 767px) {
+    #navs {
+        display: block;
+    }
+
     .linha {
         flex-direction: column;
     }
@@ -1133,6 +1170,10 @@ nav .active-section span {
 }
 
 @media (max-width: 690px) {
+    #navs {
+        display: block;
+    }
+
     .linha {
         flex-direction: column;
     }

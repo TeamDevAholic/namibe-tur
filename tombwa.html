@@ -29,10 +29,25 @@ https://templatemo.com/tm-518-sentra
         />
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var calendarEl = document.getElementById('calendar')
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth',
+                    locale: 'pt-ao',
+                })
+                calendar.render()
+            })
+        </script>
     </head>
 
     <body>
-        <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <div
+            id="navs"
+            style="position: absolute; z-index: 50; top: 70px; left: 50%"
+        >
             <button
                 type="button"
                 id="nav-toggle"
@@ -45,17 +60,67 @@ https://templatemo.com/tm-518-sentra
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+        </div>
+
+        <header
+            style="padding: 0.5rem"
+            class="nav-down responsive-nav hidden-lg hidden-md"
+        >
+            <div class="owl-carousel">
+                <div>
+                    <a href="index.html">
+                        <img
+                            src="img/mocamedes-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Inicio
+                    </a>
+                </div>
+                <div>
+                    <a href="mocamedes.html">
+                        <img
+                            src="img/mocamedes-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Moçâmedes
+                    </a>
+                </div>
+                <div>
+                    <a href="bibala.html">
+                        <img src="img/bibala-featured-01.jpg" alt="Moçamedes" />
+                        Bibala
+                    </a>
+                </div>
+                <div>
+                    <a href="camiucuico.html">
+                        <img
+                            src="img/camucuio-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Camucuio
+                    </a>
+                </div>
+                <div>
+                    <a href="virei.html">
+                        <img src="img/virei-featured-01.jpg" alt="Moçamedes" />
+                        Virei
+                    </a>
+                </div>
+                <div>
+                    <a href="tombwa.html">
+                        <img src="img/tombwa-featured-01.jpg" alt="Moçamedes" />
+                        Tômbwa
+                    </a>
+                </div>
+            </div>
             <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
+            <div
+                id="main-nav"
+                class="collapse navbar-collapse"
+                style="margin-top: 2rem"
+            >
                 <nav>
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="mocamedes.html">Moçâmedes</a></li>
-                        <li><a href="bibala.html">Bibala</a></li>
-                        <li><a href="camiucuico.html">Camucuio</a></li>
-                        <li><a href="virei.html">Virei</a></li>
-                        <li><a href="tombwa.html">Tômbwa</a></li>
-                        <hr />
                         <li><a href="historia.html">História</a></li>
                         <li><a href="roteiros.html">Roteiros</a></li>
                         <li><a href="sitios.html">Sítios</a></li>
@@ -68,6 +133,14 @@ https://templatemo.com/tm-518-sentra
                         <li>
                             <a href="agenda-cultural.html">Agenda Cultural</a>
                         </li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="calendario-cultural.html"
+                                >Calendário Cultural</a
+                            >
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -79,7 +152,7 @@ https://templatemo.com/tm-518-sentra
             </div>
             <nav>
                 <ul>
-                    <h2>Províncias</h2>
+                    <h2>municípios</h2>
                     <li>
                         <a href="index.html">
                             <span class="rect"></span>
@@ -163,6 +236,20 @@ https://templatemo.com/tm-518-sentra
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Agenda Cultural
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendario-cultural.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Calendário Cultural
                         </a>
                     </li>
                 </ul>
@@ -273,6 +360,27 @@ https://templatemo.com/tm-518-sentra
         </div>
 
         <div class="page-content">
+            <section class="content-section section">
+                <div class="section-heading">
+                    <h1>História do <em>Tombwa</em></h1>
+                </div>
+
+                <div class="section-content">
+                    <div class="linha">
+                        <p>
+                            Tômbwa, anteriormente conhecida como Porto
+                            Alexandre, é uma cidade na província do Namibe,
+                            Angola. É conhecida por sua história ligada à pesca
+                            e à indústria de processamento de peixe,
+                            desempenhando um papel significativo na economia
+                            local. Para mais detalhes sobre a história de
+                            Tômbwa, você pode consultar fontes adicionais ou
+                            páginas específicas dedicadas à história angolana.
+                        </p>
+                        <img src="img/history.jpg" alt="História" />
+                    </div>
+                </div>
+            </section>
             <section id="onde-comer" class="content-section section">
                 <div class="section-heading">
                     <h1>Gastronomia do <em>Tômbwa</em></h1>
@@ -319,7 +427,6 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </section>
-
             <section id="featured" class="content-section section">
                 <div class="section-heading">
                     <h1>Lugares<br /><em>a Vizitar</em></h1>
@@ -459,6 +566,284 @@ https://templatemo.com/tm-518-sentra
                     </div>
                 </div>
             </section>
+            <section id="eventos" class="content-section">
+                <div class="section-heading">
+                    <h1>Eventos no <br /><em>Tombwa</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul
+                                class="tabs clearfix"
+                                data-tabgroup="first-tab-group"
+                            >
+                                <li>
+                                    <a href="#tab1" class="active">Janeiro</a>
+                                </li>
+                                <li><a href="#tab2">Fevereiro</a></li>
+                                <li><a href="#tab3">Março</a></li>
+                                <li><a href="#tab4">Abril</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_1.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >25 de Janeiro de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quas
+                                                        iure nihil odit quo
+                                                        voluptates, ipsum iusto.
+                                                        Suscipit voluptate
+                                                        dolores ipsum assumenda
+                                                        itaque autem nihil
+                                                        tempora eveniet,
+                                                        laboriosam officia.
+                                                        Minus, rerum?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_2.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >30 de Janeiro de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Praesentium, veniam
+                                                        dolorum fuga iusto odio
+                                                        sequi impedit
+                                                        perferendis! Aliquam,
+                                                        quaerat numquam est,
+                                                        quisquam eaque
+                                                        doloremque suscipit
+                                                        tempora nobis autem
+                                                        aspernatur ut.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_1.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >15 de Fevereiro de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quas
+                                                        iure nihil odit quo
+                                                        voluptates, ipsum iusto.
+                                                        Suscipit voluptate
+                                                        dolores ipsum assumenda
+                                                        itaque autem nihil
+                                                        tempora eveniet,
+                                                        laboriosam officia.
+                                                        Minus, rerum?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_2.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >25 de Fevereiro de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Praesentium, veniam
+                                                        dolorum fuga iusto odio
+                                                        sequi impedit
+                                                        perferendis! Aliquam,
+                                                        quaerat numquam est,
+                                                        quisquam eaque
+                                                        doloremque suscipit
+                                                        tempora nobis autem
+                                                        aspernatur ut.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab3">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_1.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >25 de Março de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quas
+                                                        iure nihil odit quo
+                                                        voluptates, ipsum iusto.
+                                                        Suscipit voluptate
+                                                        dolores ipsum assumenda
+                                                        itaque autem nihil
+                                                        tempora eveniet,
+                                                        laboriosam officia.
+                                                        Minus, rerum?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_2.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >16 Março de 2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Praesentium, veniam
+                                                        dolorum fuga iusto odio
+                                                        sequi impedit
+                                                        perferendis! Aliquam,
+                                                        quaerat numquam est,
+                                                        quisquam eaque
+                                                        doloremque suscipit
+                                                        tempora nobis autem
+                                                        aspernatur ut.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="tab4">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_1.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >25 de Abril de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit. Quas
+                                                        iure nihil odit quo
+                                                        voluptates, ipsum iusto.
+                                                        Suscipit voluptate
+                                                        dolores ipsum assumenda
+                                                        itaque autem nihil
+                                                        tempora eveniet,
+                                                        laboriosam officia.
+                                                        Minus, rerum?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/blog_2.jpg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Evento</h4>
+                                                    <span
+                                                        >16 de Abril de
+                                                        2024</span
+                                                    >
+                                                    <p>
+                                                        Lorem ipsum dolor sit
+                                                        amet consectetur
+                                                        adipisicing elit.
+                                                        Praesentium, veniam
+                                                        dolorum fuga iusto odio
+                                                        sequi impedit
+                                                        perferendis! Aliquam,
+                                                        quaerat numquam est,
+                                                        quisquam eaque
+                                                        doloremque suscipit
+                                                        tempora nobis autem
+                                                        aspernatur ut.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section section">
+                <div class="section-heading">
+                    <h1>Calendário <em>cultural</em></h1>
+                </div>
+
+                <div class="section-content">
+                    <div id="calendar"></div>
+                </div>
+            </section>
+
             <section id="contact" class="content-section section">
                 <div class="section-heading">
                     <h1><em>Localização</em></h1>
@@ -480,6 +865,106 @@ https://templatemo.com/tm-518-sentra
                     ></iframe>
                 </div>
             </section>
+            <section id="projects" class="content-section section">
+                <div class="section-heading">
+                    <h1>Roteiros<br /><em>Turisticos</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="masonry">
+                        <div class="row">
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a
+                                        href="img/roteiro-big-01.jpg"
+                                        data-lightbox="imagem"
+                                        ><img
+                                            src="img/roteiro-01.jpg"
+                                            alt="image 1"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="item second-item">
+                                <div class="col-md-4">
+                                    <a
+                                        href="img/roteiro-big-02.jpg"
+                                        data-lightbox="imagem"
+                                        ><img
+                                            src="img/roteiro-02.jpg"
+                                            alt="image 2"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a
+                                        href="img/roteiro-big-03.jpg"
+                                        data-lightbox="imagem"
+                                        ><img
+                                            src="img/roteiro-03.jpg"
+                                            alt="image 3"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-4">
+                                    <a
+                                        href="img/roteiro-big-04.jpg"
+                                        data-lightbox="imagem"
+                                        ><img
+                                            src="img/roteiro-04.jpg"
+                                            alt="image 4"
+                                    /></a>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="col-md-8">
+                                    <a
+                                        href="img/roteiro-big-05.jpg"
+                                        data-lightbox="imagem"
+                                        ><img
+                                            src="img/roteiro-05.jpg"
+                                            alt="image 5"
+                                    /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section section">
+                <div class="section-heading">
+                    <h1>Procura por <br /><em>alguma coisa?</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <fieldset>
+                                <input
+                                    name="pesquisar"
+                                    type="text"
+                                    class="form-control"
+                                    id="pesquisar"
+                                    placeholder="Pesquisar..."
+                                    required=""
+                                />
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button
+                                    type="submit"
+                                    id="form-submit"
+                                    class="btn"
+                                >
+                                    Pesquisar...
+                                </button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="footer">
                 <p>
                     Copyright &copy;
@@ -558,6 +1043,13 @@ https://templatemo.com/tm-518-sentra
                 buttons[1].addEventListener('click', () => {
                     window.location.href = 'index.html'
                 })
+            })
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
             })
         </script>
 

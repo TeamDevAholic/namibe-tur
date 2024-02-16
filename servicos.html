@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>NAMIBE TUR | Roteiros</title>
+        <title>NAMIBE TUR | Serviços</title>
 
         <!-- 
 
@@ -254,68 +254,75 @@ https://templatemo.com/tm-518-sentra
         </div>
 
         <div class="page-content">
-            <section id="projects" class="content-section section">
+            <section id="eventos" class="content-section">
                 <div class="section-heading">
-                    <h1>Roteiros<br /><em>Turisticos</em></h1>
+                    <h1>Serviços disponiveis</h1>
                 </div>
                 <div class="section-content">
-                    <div class="masonry">
-                        <div class="row">
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a
-                                        href="img/roteiro-big-01.jpg"
-                                        data-lightbox="imagem"
-                                        ><img
-                                            src="img/roteiro-01.jpg"
-                                            alt="image 1"
-                                    /></a>
+                    <div class="tabs-content">
+                        <div class="wrapper">
+                            <ul
+                                class="tabs clearfix"
+                                data-tabgroup="first-tab-group"
+                            >
+                                <li>
+                                    <a href="#tab1" class="active">Táxis</a>
+                                </li>
+                                <li><a href="#tab2">Agências</a></li>
+                            </ul>
+                            <section id="first-tab-group" class="tabgroup">
+                                <div id="tab1">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/taxi.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Táxis Disponiveis</h4>
+                                                    <ul>
+                                                        <li>
+                                                            De X para Y (as 15
+                                                            horas)
+                                                        </li>
+                                                        <br />
+                                                        <li>
+                                                            De Y para Z (as 15
+                                                            horas)
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="item second-item">
-                                <div class="col-md-4">
-                                    <a
-                                        href="img/roteiro-big-02.jpg"
-                                        data-lightbox="imagem"
-                                        ><img
-                                            src="img/roteiro-02.jpg"
-                                            alt="image 2"
-                                    /></a>
+                                <div id="tab2">
+                                    <ul>
+                                        <li>
+                                            <div class="item">
+                                                <img
+                                                    src="img/adencia-de-viagens.svg"
+                                                    alt=""
+                                                />
+                                                <div class="text-content">
+                                                    <h4>Agências de Viagens</h4>
+                                                    <span
+                                                        >veja as agências de
+                                                        viagens
+                                                        disponiveis</span
+                                                    >
+                                                    <ol>
+                                                        <li>Agência X</li>
+                                                        <li>Tranportadora Y</li>
+                                                        <li>Z transportes</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a
-                                        href="img/roteiro-big-03.jpg"
-                                        data-lightbox="imagem"
-                                        ><img
-                                            src="img/roteiro-03.jpg"
-                                            alt="image 3"
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-4">
-                                    <a
-                                        href="img/roteiro-big-04.jpg"
-                                        data-lightbox="imagem"
-                                        ><img
-                                            src="img/roteiro-04.jpg"
-                                            alt="image 4"
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="col-md-8">
-                                    <a
-                                        href="img/roteiro-big-05.jpg"
-                                        data-lightbox="imagem"
-                                        ><img
-                                            src="img/roteiro-05.jpg"
-                                            alt="image 5"
-                                    /></a>
-                                </div>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -420,6 +427,19 @@ https://templatemo.com/tm-518-sentra
 
                 lastScrollTop = st
             }
+
+            document.addEventListener('DOMContentLoaded', () => {
+                var buttons =
+                    window.document.getElementsByClassName('slick-arrow')
+
+                buttons[0].addEventListener('click', () => {
+                    window.location.href = 'tombwa.html'
+                })
+
+                buttons[1].addEventListener('click', () => {
+                    window.location.href = 'mocamedes.html'
+                })
+            })
 
             $('.owl-carousel').owlCarousel({
                 loop: true,

@@ -32,7 +32,10 @@ https://templatemo.com/tm-518-sentra
     </head>
 
     <body>
-        <header class="nav-down responsive-nav hidden-lg hidden-md">
+        <div
+            id="navs"
+            style="position: absolute; z-index: 50; top: 70px; left: 50%"
+        >
             <button
                 type="button"
                 id="nav-toggle"
@@ -45,17 +48,67 @@ https://templatemo.com/tm-518-sentra
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+        </div>
+
+        <header
+            style="padding: 0.5rem"
+            class="nav-down responsive-nav hidden-lg hidden-md"
+        >
+            <div class="owl-carousel">
+                <div>
+                    <a href="index.html">
+                        <img
+                            src="img/mocamedes-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Inicio
+                    </a>
+                </div>
+                <div>
+                    <a href="mocamedes.html">
+                        <img
+                            src="img/mocamedes-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Moçâmedes
+                    </a>
+                </div>
+                <div>
+                    <a href="bibala.html">
+                        <img src="img/bibala-featured-01.jpg" alt="Moçamedes" />
+                        Bibala
+                    </a>
+                </div>
+                <div>
+                    <a href="camiucuico.html">
+                        <img
+                            src="img/camucuio-featured-01.jpg"
+                            alt="Moçamedes"
+                        />
+                        Camucuio
+                    </a>
+                </div>
+                <div>
+                    <a href="virei.html">
+                        <img src="img/virei-featured-01.jpg" alt="Moçamedes" />
+                        Virei
+                    </a>
+                </div>
+                <div>
+                    <a href="tombwa.html">
+                        <img src="img/tombwa-featured-01.jpg" alt="Moçamedes" />
+                        Tômbwa
+                    </a>
+                </div>
+            </div>
             <!--/.navbar-header-->
-            <div id="main-nav" class="collapse navbar-collapse">
+            <div
+                id="main-nav"
+                class="collapse navbar-collapse"
+                style="margin-top: 2rem"
+            >
                 <nav>
                     <ul class="nav navbar-nav">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="mocamedes.html">Moçâmedes</a></li>
-                        <li><a href="bibala.html">Bibala</a></li>
-                        <li><a href="camiucuico.html">Camucuio</a></li>
-                        <li><a href="virei.html">Virei</a></li>
-                        <li><a href="tombwa.html">Tômbwa</a></li>
-                        <hr />
                         <li><a href="historia.html">História</a></li>
                         <li><a href="roteiros.html">Roteiros</a></li>
                         <li><a href="sitios.html">Sítios</a></li>
@@ -68,18 +121,25 @@ https://templatemo.com/tm-518-sentra
                         <li>
                             <a href="agenda-cultural.html">Agenda Cultural</a>
                         </li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="calendario-cultural.html"
+                                >Calendário Cultural</a
+                            >
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
-
         <div class="sidebar-navigation hidde-sm hidden-xs">
             <div class="logo">
                 <a href="#">NAMIBE<em> TUR</em></a>
             </div>
             <nav>
                 <ul>
-                    <h2>Províncias</h2>
+                    <h2>municípios</h2>
                     <li>
                         <a href="index.html">
                             <span class="rect"></span>
@@ -163,6 +223,20 @@ https://templatemo.com/tm-518-sentra
                             <span class="rect"></span>
                             <span class="circle"></span>
                             Agenda Cultural
+                        </a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Serviços
+                        </a>
+                    </li>
+                    <li>
+                        <a href="calendario-cultural.html">
+                            <span class="rect"></span>
+                            <span class="circle"></span>
+                            Calendário Cultural
                         </a>
                     </li>
                 </ul>
@@ -484,6 +558,40 @@ https://templatemo.com/tm-518-sentra
                     ></iframe>
                 </div>
             </section>
+
+            <section class="content-section section">
+                <div class="section-heading">
+                    <h1>Procura por <br /><em>alguma coisa?</em></h1>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <fieldset>
+                                <input
+                                    name="pesquisar"
+                                    type="text"
+                                    class="form-control"
+                                    id="pesquisar"
+                                    placeholder="Pesquisar..."
+                                    required=""
+                                />
+                            </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                            <fieldset>
+                                <button
+                                    type="submit"
+                                    id="form-submit"
+                                    class="btn"
+                                >
+                                    Pesquisar...
+                                </button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            s
             <section class="footer">
                 <p>
                     Copyright &copy;
@@ -562,6 +670,13 @@ https://templatemo.com/tm-518-sentra
                 buttons[1].addEventListener('click', () => {
                     window.location.href = 'mocamedes.html'
                 })
+            })
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                items: 1,
+                autoplay: true,
+                autoplayTimeout: 3000,
             })
         </script>
 
