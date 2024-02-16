@@ -18,6 +18,14 @@ p {
 
 #navs {
     display: none;
+    position: absolute;
+    z-index: 50;
+    top: 83px !important;
+    left: 50%;
+}
+
+.nav-down {
+    min-height: 75px;
 }
 
 .nav-down .owl-carousel .owl-dots {
@@ -30,6 +38,7 @@ p {
 }
 
 .nav-down .owl-carousel div a img {
+    height: 50px;
     width: 50px;
     border-radius: 100%;
     margin: auto;
@@ -187,15 +196,13 @@ header {
 }
 
 .navbar-toggle {
-    width: 100vw;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.41);
     display: inline-block;
     -webkit-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-400%) translateY(-50%);
 }
 
 .navbar-collapse hr {
@@ -234,7 +241,6 @@ header {
 }
 
 .navbar-toggle span {
-    margin: auto;
     background-color: white;
 }
 
@@ -1072,7 +1078,7 @@ nav .active-section span {
 
 @media (max-width: 992px) {
     #navs {
-        display: block;
+        display: none;
     }
 
     .linha {
